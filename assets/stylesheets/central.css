@@ -1,0 +1,174 @@
+a{
+  opacity:1;
+  text-decoration:none;
+}
+a:active{
+  opacity:0.5;
+}
+
+#mark{
+  width:142px;
+  height:120px;
+  background:url(../images/mark_142.png) top center no-repeat;
+  text-indent:-9999em;
+  margin:0 auto;
+}
+#mark a{
+  display:block;
+  width:142px;
+  height:120px;
+  border:0;
+}
+#slogan{
+  margin:10px 0;
+  color:#222;
+  display:none;
+}
+#reserve{
+  display:block;
+  border:0;
+  margin:10px -60px 1px;
+  padding:20px 0;
+  background:rgba(255,255,255,0.8) url(../images/reservations.png) center center no-repeat;
+  color:#216fe3;
+  text-transform:uppercase;
+  font-weight:bold;
+  letter-spacing:2px;
+  text-align:center;
+  text-indent:-9999em;
+}
+.drawer-handle{
+  position:fixed;
+  top:0;
+  left:0;
+  width:142px;
+  padding:50px 60px 0;
+  background:rgba(246,177,29,0.8);
+  line-height:22px;
+  font-size:14px;
+  font-family:Georgia,serif;
+}
+.drawer-handle .nav{
+  margin:0 -60px;
+  padding:0;
+}
+.drawer-handle .nav li{
+}
+.drawer-handle .nav li a{
+  margin:0 0 1px 0;
+  padding:15px 60px;
+  border:0;
+  display:block;
+  background:rgba(255,255,255,0.4) center center no-repeat;
+  text-transform:uppercase;
+  font-family:Arial;
+  font-weight:bold;
+  letter-spacing:2px;
+  color:#444;
+  text-indent:-9999em;
+}
+#nav-menu a{
+  background-image:url(../images/menu.png);
+}
+#nav-location a{
+  background-image:url(../images/location.png);
+}
+#nav-photographs a{
+  background-image:url(../images/photographs.png);
+}
+#nav-about a{
+  background-image:url(../images/about.png);
+}
+.drawer-handle .nav li a:hover{
+  background-color:rgba(255,255,255,0.7);
+}
+.contact{
+  margin:0 -60px;
+  padding:50px 60px;
+  font-size:12px;
+  color:#333;
+  line-height:18px;
+  font-weight:bold;
+}
+.contact a{
+  border-bottom:1px solid #333;
+  color:#333;
+}
+footer{
+  position:fixed;
+  right:0;
+  bottom:0;
+  font-family:Arial;
+  text-transform:uppercase;
+  font-size:12px;
+  letter-spacing:2px;
+  font-weight:bold;
+  text-align:right;
+}
+footer ul{
+  padding:0;
+  display:inline-block;
+  margin:0;
+}
+footer ul li{
+  display:inline-block;
+  margin:0 1px 0 0;
+}
+footer ul li a{
+  color:#666;
+  display:block;
+  background:rgba(255,255,255,0.8);
+  padding:10px;
+}
+footer ul li a:hover{
+  color:#216fe3;
+}
+footer .attribution{
+  color:#216fe3;
+  display:block;
+  color:rgba(0,0,0,0.6);
+  letter-spacing:1px;
+}
+.splash{
+  position:fixed;
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
+  z-index:-1;
+  max-width:100%;
+  }
+.splash img{
+  max-width:100%;
+  }
+/* Some elements need an !important declaration because of the cascade in central.css */
+@media screen and (max-width:770px){
+  .drawer-handle{
+    right:0;
+    width:auto;
+  }
+  .contact{
+    margin:0 auto;
+    width:142px;
+  }
+  footer{
+    margin:0 auto;
+    left:0;
+    text-align:center;
+  }
+  .splash{
+    max-width:inherit;
+  }
+  .splash img{
+    max-width:inherit;
+    max-height:100%;
+    margin-left:-40%;
+  }
+  #nav-photographs,
+  #nav-about,
+  footer,
+  .drawer-handle .contact{
+    display:none;
+  }
+  /* Media query close */  
+}

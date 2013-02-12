@@ -1,0 +1,33 @@
+
+
+/* For Retina */
+@media only screen and (-Webkit-min-device-pixel-ratio: 1.5),
+only screen and (-moz-min-device-pixel-ratio: 1.5),
+only screen and (-o-min-device-pixel-ratio: 3/2),
+only screen and (min-device-pixel-ratio: 1.5) {
+body{
+  background:url(../images/pebble_leather@2x.jpg) !important;
+  background-size:320px 320px;
+  }
+#administration-login h1{
+  background-image:url(../images/instore_login@2x.png);
+  background-size:182px 38px;
+  }
+#sovereign-nav #nav-settings a{
+  background:url(../images/gear_grey@2x.png) center center no-repeat;
+  background-size:40px 40px;
+  }
+.sovereign #hdr{
+  background:#666 url(../images/texture_grain_charcoal@2x.png);
+  background-size:80px 80px;
+  }
+.ui-selectmenu-icon{
+  background-image:url(../images/dropdown@2x.png);
+  background-size:16px 40px;  
+  }
+.email-input{
+  background-image:url(../images/email_input@2x.png);
+  background-size:40px 40px;  
+  }
+}
+/* End Retina */
