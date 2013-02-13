@@ -173,3 +173,13 @@ footer .attribution{
   }
   /* Media query close */  
 }
+@media screen and (max-height:600px){
+  .contact{
+    position:fixed;
+    top:0;
+    left:323px;
+    height:359px;
+    background:rgba(255,255,255,0.6);
+  }
+  /* Media query close */  
+}
